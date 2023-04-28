@@ -11,12 +11,15 @@ config_version=5
 [application]
 
 config/name="kumu-game-jam"
+run/main_scene="res://globals/scene_switcher/scene_switcher.tscn"
 config/features=PackedStringArray("4.0", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://settings/icon.png"
 
 [autoload]
 
 Dialogic="*res://addons/dialogic/Other/DialogicGameHandler.gd"
+SceneSwitcher="*res://globals/scene_switcher/scene_switcher.tscn"
+Global="*res://globals/global/global.tscn"
 
 [dialogic]
 
@@ -25,6 +28,13 @@ editor/current_editor=&"HomePage"
 editor/current_resources={}
 editor/last_resources=PackedStringArray("")
 editor/last/resources=[]
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/size/mode=3
+window/size/resizable=false
 
 [editor_plugins]
 
