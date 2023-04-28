@@ -1,0 +1,80 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbc1uh4bjooge"]
+
+[ext_resource type="Script" path="res://prog/scripts/game/ui/battle/game_over.gd" id="1_il61p"]
+[ext_resource type="FontFile" uid="uid://c0jd11eucv7ex" path="res://art/ui/fonts/game_over/Conviva.ttf" id="2_7ujcg"]
+[ext_resource type="Texture2D" uid="uid://cvb7ktmt6s0g2" path="res://art/ui/game_over/buttons/play-again_unclicked.png" id="2_uskju"]
+[ext_resource type="Texture2D" uid="uid://bw3hd24c3yrqd" path="res://art/ui/game_over/buttons/play-again_clicked.png" id="3_d4hsy"]
+[ext_resource type="Texture2D" uid="uid://deu7qij4big4v" path="res://art/ui/game_over/buttons/quit_unclicked.png" id="5_e2rok"]
+[ext_resource type="Texture2D" uid="uid://cjinpp7min6vt" path="res://art/ui/game_over/buttons/quit_clicked.png" id="6_ovqy0"]
+
+[node name="GameOver" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_il61p")
+
+[node name="Background" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Art" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Text" type="Control" parent="Background"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UpperText" type="Label" parent="Background/Text"]
+layout_mode = 0
+offset_left = 510.0
+offset_top = 187.0
+offset_right = 1415.0
+offset_bottom = 485.0
+theme_override_fonts/font = ExtResource("2_7ujcg")
+theme_override_font_sizes/font_size = 175
+text = "TAPOS ANG"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="LowerText" type="Label" parent="Background/Text"]
+layout_mode = 0
+offset_left = 509.0
+offset_top = 401.0
+offset_right = 1414.0
+offset_bottom = 699.0
+theme_override_fonts/font = ExtResource("2_7ujcg")
+theme_override_font_sizes/font_size = 175
+text = "LARO"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 1
+
+[node name="Buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PlayAgain" type="TextureButton" parent="Buttons"]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 719.0
+offset_right = 1148.0
+offset_bottom = 827.0
+texture_normal = ExtResource("3_d4hsy")
+texture_pressed = ExtResource("2_uskju")
+
+[node name="QuitToTitle" type="TextureButton" parent="Buttons"]
+layout_mode = 0
+offset_left = 773.0
+offset_top = 851.0
+offset_right = 1148.0
+offset_bottom = 959.0
+texture_normal = ExtResource("6_ovqy0")
+texture_pressed = ExtResource("5_e2rok")
+
+[connection signal="pressed" from="Buttons/PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="Buttons/QuitToTitle" to="." method="_on_quit_to_title_pressed"]

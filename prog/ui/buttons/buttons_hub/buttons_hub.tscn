@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=3 uid="uid://dvijsldfsr201"]
+
+[ext_resource type="PackedScene" uid="uid://b6nkjpxlf1eh4" path="res://prog/scenes/ui/buttons/pause_button.tscn" id="1_ttsl0"]
+[ext_resource type="PackedScene" uid="uid://dbxfbn4qcucf1" path="res://prog/scenes/ui/buttons/options_button.tscn" id="2_8xsen"]
+[ext_resource type="PackedScene" path="res://prog/scenes/ui/buttons/title_screen_button.tscn" id="3_3sbay"]
+
+[node name="ButtonsHub" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Hub" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 1737.0
+offset_top = 663.0
+offset_right = 1874.0
+offset_bottom = 1041.0
+
+[node name="PauseButton" parent="Hub" instance=ExtResource("1_ttsl0")]
+layout_mode = 1
+offset_left = 3.0
+offset_right = 109.0
+offset_bottom = 83.0
+
+[node name="OptionsButton" parent="Hub" instance=ExtResource("2_8xsen")]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 119.0
+offset_right = 134.0
+offset_bottom = 221.0
+
+[node name="TitleScreenButton" parent="Hub" instance=ExtResource("3_3sbay")]
+layout_mode = 1
+offset_top = 236.0
+offset_right = 136.0
+offset_bottom = 376.0

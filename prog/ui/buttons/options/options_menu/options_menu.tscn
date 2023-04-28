@@ -1,0 +1,96 @@
+[gd_scene load_steps=10 format=3 uid="uid://c7anb2a6fa06q"]
+
+[ext_resource type="Script" path="res://prog/scripts/game/ui/options/options_menu.gd" id="1_x0p18"]
+[ext_resource type="Texture2D" uid="uid://dau4l3qmgenne" path="res://art/ui/options_menu/settings menu position.png" id="2_hpq5k"]
+[ext_resource type="Texture2D" uid="uid://6o8thfknf4g4" path="res://art/ui/options_menu/buttons/exit_unclicked.png" id="3_2wxao"]
+[ext_resource type="PackedScene" path="res://prog/scenes/ui/options/volume_setting.tscn" id="3_e81uw"]
+[ext_resource type="Texture2D" uid="uid://uspxb73gjl8t" path="res://art/ui/options_menu/Options-bg.png" id="3_fgmoe"]
+[ext_resource type="Texture2D" uid="uid://dnomixxwx0gbv" path="res://art/ui/options_menu/buttons/exit_clicked.png" id="4_7y3pq"]
+[ext_resource type="FontFile" uid="uid://brtnewb411ukf" path="res://art/ui/fonts/title_buttons_menu/Brillo Solar.otf" id="4_t4fcc"]
+[ext_resource type="Texture2D" uid="uid://bc66ms585uwxq" path="res://art/ui/options_menu/buttons/save_unclicked.png" id="5_f6o4w"]
+[ext_resource type="Texture2D" uid="uid://cfjbdki1irg8g" path="res://art/ui/options_menu/buttons/save_clicked.png" id="6_wt6cw"]
+
+[node name="OptionsMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 581.0
+offset_top = 120.0
+offset_right = 581.0
+offset_bottom = 120.0
+size_flags_horizontal = 4
+script = ExtResource("1_x0p18")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -12.0
+offset_top = -10.0
+offset_right = 765.0
+offset_bottom = 845.0
+texture = ExtResource("2_hpq5k")
+
+[node name="Background" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Art" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_fgmoe")
+
+[node name="Text" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="OptionsText" type="Label" parent="Text"]
+layout_mode = 0
+offset_left = 286.0
+offset_top = 254.0
+offset_right = 476.0
+offset_bottom = 326.0
+theme_override_fonts/font = ExtResource("4_t4fcc")
+theme_override_font_sizes/font_size = 70
+text = "OPTIONS"
+
+[node name="Buttons" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ExitMenu" type="TextureButton" parent="Buttons"]
+layout_mode = 0
+offset_left = 94.0
+offset_top = 387.0
+offset_right = 155.0
+offset_bottom = 448.0
+texture_normal = ExtResource("4_7y3pq")
+texture_pressed = ExtResource("3_2wxao")
+
+[node name="SaveOptions" type="TextureButton" parent="Buttons"]
+layout_mode = 0
+offset_left = 602.0
+offset_top = 386.0
+offset_right = 663.0
+offset_bottom = 447.0
+texture_normal = ExtResource("6_wt6cw")
+texture_pressed = ExtResource("5_f6o4w")
+
+[node name="MusicVolume" parent="Buttons" instance=ExtResource("3_e81uw")]
+offset_left = 272.0
+offset_top = 346.0
+offset_right = 489.0
+offset_bottom = 461.0
+setting_name = "Tunog"
+
+[node name="SoundVolume" parent="Buttons" instance=ExtResource("3_e81uw")]
+offset_left = 272.0
+offset_top = 479.0
+offset_right = 489.0
+offset_bottom = 594.0
+setting_name = "Musika"
+
+[connection signal="pressed" from="Buttons/ExitMenu" to="." method="_on_exit_menu_pressed"]
+[connection signal="pressed" from="Buttons/SaveOptions" to="." method="_on_save_options_pressed"]

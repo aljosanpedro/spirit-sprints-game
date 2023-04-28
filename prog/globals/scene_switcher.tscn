@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3w2fvlp82uus"]
+
+[ext_resource type="Script" path="res://prog/scripts/game/ui/globals/scene_switcher.gd" id="1_fatsv"]
+
+[node name="SceneSwitcher" type="Node2D"]
+script = ExtResource("1_fatsv")

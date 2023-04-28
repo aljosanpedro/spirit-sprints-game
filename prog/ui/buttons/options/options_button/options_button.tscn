@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbxfbn4qcucf1"]
+
+[ext_resource type="Texture2D" uid="uid://cmmm6udeih2hv" path="res://art/ui/title_screen/buttons/options_unclicked.png" id="1_ofhpt"]
+[ext_resource type="Texture2D" uid="uid://com4x1acnyrht" path="res://art/ui/title_screen/buttons/options_clicked.png" id="2_65rxq"]
+[ext_resource type="Script" path="res://prog/scripts/game/ui/buttons/options_button.gd" id="3_cxn1k"]
+
+[node name="Options" type="TextureButton"]
+offset_right = 131.0
+offset_bottom = 102.0
+texture_normal = ExtResource("1_ofhpt")
+texture_pressed = ExtResource("2_65rxq")
+script = ExtResource("3_cxn1k")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

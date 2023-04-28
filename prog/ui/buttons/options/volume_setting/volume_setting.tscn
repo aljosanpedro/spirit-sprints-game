@@ -1,0 +1,77 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="FontFile" uid="uid://brtnewb411ukf" path="res://art/ui/fonts/title_buttons_menu/Brillo Solar.otf" id="1_e0w3f"]
+[ext_resource type="Script" path="res://prog/scripts/game/ui/options/volume_setting.gd" id="1_kji4l"]
+[ext_resource type="Texture2D" uid="uid://dwjtlpnwkrp40" path="res://art/ui/options_menu/buttons/volume-no-bar.png" id="2_v8i70"]
+[ext_resource type="Texture2D" uid="uid://crv0rvyne0yas" path="res://art/ui/options_menu/buttons/low-volume_clicked.png" id="3_n11n4"]
+[ext_resource type="Texture2D" uid="uid://c2w7mbcmey8kc" path="res://art/ui/options_menu/buttons/low-volume_unclicked.png" id="4_alxyg"]
+[ext_resource type="FontFile" uid="uid://w8cr64l2e0sa" path="res://art/ui/fonts/dialogue/Post.otf" id="4_xchkh"]
+[ext_resource type="Texture2D" uid="uid://b1e17l7aqdasg" path="res://art/ui/options_menu/buttons/high-volume_clicked.png" id="5_2sps5"]
+[ext_resource type="Texture2D" uid="uid://epk0hnx2rdix" path="res://art/ui/options_menu/buttons/high-volume_unclicked.png" id="6_3u4sv"]
+
+[node name="VolumeSetting" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 217.0
+offset_bottom = 115.0
+script = ExtResource("1_kji4l")
+
+[node name="SettingLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 62.0
+offset_top = 3.0
+offset_right = 156.0
+offset_bottom = 48.0
+theme_override_fonts/font = ExtResource("1_e0w3f")
+theme_override_font_sizes/font_size = 42
+text = "NAME"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ValuePanel" type="Control" parent="."]
+anchors_preset = 0
+offset_left = -272.0
+offset_top = -312.0
+offset_right = -232.0
+offset_bottom = -272.0
+
+[node name="Art" type="TextureRect" parent="ValuePanel"]
+layout_mode = 0
+offset_left = 338.0
+offset_top = 368.0
+offset_right = 421.0
+offset_bottom = 422.0
+texture = ExtResource("2_v8i70")
+
+[node name="Text" type="Label" parent="ValuePanel"]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 374.0
+offset_right = 403.0
+offset_bottom = 417.0
+theme_override_fonts/font = ExtResource("4_xchkh")
+theme_override_font_sizes/font_size = 42
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DecreaseButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 3.0
+offset_top = 78.0
+offset_right = 48.0
+offset_bottom = 118.0
+texture_normal = ExtResource("3_n11n4")
+texture_pressed = ExtResource("4_alxyg")
+
+[node name="IncreaseButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 59.0
+offset_right = 214.0
+offset_bottom = 105.0
+texture_normal = ExtResource("5_2sps5")
+texture_pressed = ExtResource("6_3u4sv")
+
+[connection signal="pressed" from="DecreaseButton" to="." method="_on_decrease_button_pressed"]
+[connection signal="pressed" from="IncreaseButton" to="." method="_on_increase_button_pressed"]

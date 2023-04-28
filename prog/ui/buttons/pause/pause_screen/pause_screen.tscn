@@ -1,0 +1,86 @@
+[gd_scene load_steps=8 format=3 uid="uid://c6gt5mg7fks2h"]
+
+[ext_resource type="Script" path="res://prog/scripts/game/ui/screens/pause_screen.gd" id="1_cvrui"]
+[ext_resource type="Texture2D" uid="uid://b4iqwgrmkfbft" path="res://art/ui/pause_screen/overlay_pause-clicked.png" id="4_8il6l"]
+[ext_resource type="Texture2D" uid="uid://dnfpx34fsmxy4" path="res://art/ui/pause_screen/continue_clicked.png" id="4_wm6kc"]
+[ext_resource type="Texture2D" uid="uid://bnv8wakqpescd" path="res://art/ui/pause_screen/continue_unclicked.png" id="5_l60xi"]
+[ext_resource type="Texture2D" uid="uid://chtpcfhq0lhpv" path="res://art/ui/pause_screen/overlay_pause-unclicked.png" id="5_tbiwi"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ivg8f"]
+bg_color = Color(0.223529, 0.223529, 0.223529, 1)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oxrmj"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_8il6l")
+}],
+"loop": true,
+"name": &"clicked",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_tbiwi")
+}],
+"loop": true,
+"name": &"unclicked",
+"speed": 5.0
+}]
+
+[node name="PauseScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_cvrui")
+
+[node name="Background" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Art" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Background"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ivg8f")
+
+[node name="Icon" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Sprites" type="AnimatedSprite2D" parent="Icon"]
+sprite_frames = SubResource("SpriteFrames_oxrmj")
+animation = &"unclicked"
+centered = false
+
+[node name="Button" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 725.0
+offset_top = 833.0
+offset_right = 725.0
+offset_bottom = 833.0
+
+[node name="Continue" type="TextureButton" parent="Button"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+texture_normal = ExtResource("4_wm6kc")
+texture_pressed = ExtResource("5_l60xi")
+
+[node name="Timer" type="Node" parent="."]
+
+[node name="ClickedAnimation" type="Timer" parent="Timer"]
+wait_time = 1.5
+one_shot = true
+
+[connection signal="pressed" from="Button/Continue" to="." method="_on_continue_pressed"]
+[connection signal="timeout" from="Timer/ClickedAnimation" to="." method="_on_clicked_animation_timeout"]

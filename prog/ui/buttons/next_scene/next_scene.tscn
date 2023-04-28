@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://prog/scripts/game/ui/buttons/next_scene.gd" id="2_jvcnh"]
+
+[node name="NextScene" type="Button"]
+offset_right = 8.0
+offset_bottom = 8.0
+script = ExtResource("2_jvcnh")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

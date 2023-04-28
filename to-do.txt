@@ -1,0 +1,89 @@
+- lower-load tasks
+	- base scenes
+		- story
+		- battle
+
+	- dialogic
+		- install latest version
+		- follow emi tutorial
+		- explore features
+
+	- char art
+		- load into dialogic
+
+	- dialogue lines
+		- load into dialogic
+
+-------------------------------------
+
+- higher-load tasks
+	- ui implementation
+		- chapter titles
+			- text
+			- panel
+			- art
+			- timer
+			- fade in?
+		- battle titles
+			- like streetfighter?
+		- battle
+			- base layout
+			- health bars
+			- items
+			- menu
+			- card swipe visual guides
+		- dialog
+			- panels acc to guide
+		- credits
+	- battle prototype
+		- finalize python prototype
+		- implement python prototype in godot
+
+---------------------------------------------------------
+
+- python prototype
+	- memory phase
+		- time (timed, or infinite?)
+		- guide
+			- time
+		- items
+			- time
+			- health
+			- cards (reveal text)
+	- play phase
+		- 1st/2nd half -> bugtong/answer
+
+---------------------------------------------------------
+
+- low prio
+	* whenever i say packed scene, could instead be: add to tree -> show(), hide()
+
+	- pause screen implementation
+		- packed scene instance -> set process to stop except itself + music
+		- if button clicked -> play icon + sound for a while (timer) -> process, queue_free()
+	- options volume implementation
+		- options_menu.gd -> _on_save_options_pressed()
+		- get music & sound volume values from children -> apply
+	- buttons hover textures
+		- quick fix: switch un/clicked (since the change taking effect will serve as feedback already)
+	- scene manager
+		- central file to load scenes
+		- can use global
+			- list, index increments
+			- dict, scene name : path
+			- next scene button scene will pass no arguments (managed by global)
+	- loading screen
+		- integrate with next scene???
+		- animations/effects
+			- what if kuring's position on the water increases with progression?
+		- implementation
+			- global -> whenever a major scene loads
+				- instance packed scene loading screen -> timer -> queue free
+	- save system
+		- at least major sections (ex. ilog story, gm battle)
+		- via simple checkpoint system
+	- actually implement packed scenes
+		- credits
+		- loading screen
+		- options menu
+		- pause menu

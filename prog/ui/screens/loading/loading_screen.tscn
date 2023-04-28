@@ -1,0 +1,44 @@
+[gd_scene load_steps=3 format=3 uid="uid://wb1d6wlrph7x"]
+
+[ext_resource type="Texture2D" uid="uid://byxdwip7ixqnp" path="res://art/ui/loading_screen/loading screen.png" id="1_7d1y2"]
+[ext_resource type="Texture2D" uid="uid://bymkcwidfhh1" path="res://art/ui/loading_screen/litolpoot_loading.png" id="2_7qtmh"]
+
+[node name="LoadingScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Guide" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Art" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_7d1y2")
+
+[node name="Icon" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Art" type="TextureRect" parent="Icon"]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 648.0
+offset_right = 433.0
+offset_bottom = 946.0
+texture = ExtResource("2_7qtmh")
+
+[node name="LoadTime" type="Node" parent="."]
+
+[node name="Timer" type="Timer" parent="LoadTime"]
+wait_time = 3.0
+one_shot = true
+autostart = true

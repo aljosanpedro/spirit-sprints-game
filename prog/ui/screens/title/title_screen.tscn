@@ -1,0 +1,96 @@
+[gd_scene load_steps=10 format=3 uid="uid://cadi6bjp7dfx3"]
+
+[ext_resource type="Script" path="res://prog/scripts/game/ui/screens/title_screen.gd" id="1_mrug4"]
+[ext_resource type="Texture2D" uid="uid://c652j0jj0aqk3" path="res://art/ui/title_screen/portal.png" id="2_oaxer"]
+[ext_resource type="Texture2D" uid="uid://dpullnlkhp47f" path="res://art/ui/title_screen/buttons/start-game_unclicked.png" id="3_rcy6n"]
+[ext_resource type="Texture2D" uid="uid://bravn72luycf0" path="res://art/ui/title_screen/buttons/start-game_clicked.png" id="4_yyf31"]
+[ext_resource type="Texture2D" uid="uid://e10aig2xwnmt" path="res://art/ui/title_screen/buttons/credits_unclicked.png" id="5_tk5yt"]
+[ext_resource type="Texture2D" uid="uid://bcuhoy06xd1as" path="res://art/ui/title_screen/buttons/credits_clicked.png" id="6_0hdht"]
+[ext_resource type="PackedScene" uid="uid://dbxfbn4qcucf1" path="res://prog/scenes/ui/buttons/options_button.tscn" id="7_v0ec1"]
+[ext_resource type="Texture2D" uid="uid://ca3waknjracw4" path="res://art/ui/title_screen/buttons/quit-game_unclicked.png" id="9_4qey5"]
+[ext_resource type="Texture2D" uid="uid://hbnl1pu3fld3" path="res://art/ui/title_screen/buttons/quit-game_clicked.png" id="10_jrkl2"]
+
+[node name="TitleScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_mrug4")
+
+[node name="Background" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Art" type="TextureRect" parent="Background"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MainMenu" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 647.0
+offset_top = 219.0
+offset_right = 647.0
+offset_bottom = 219.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Background" type="Control" parent="MainMenu"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Portal" type="TextureRect" parent="MainMenu/Background"]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 627.0
+offset_bottom = 645.0
+texture = ExtResource("2_oaxer")
+
+[node name="Buttons" type="Control" parent="MainMenu"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="StartGame" type="TextureButton" parent="MainMenu/Buttons"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 165.0
+offset_right = 456.0
+offset_bottom = 267.0
+texture_normal = ExtResource("4_yyf31")
+texture_pressed = ExtResource("3_rcy6n")
+
+[node name="QuitGame" type="TextureButton" parent="MainMenu/Buttons"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 386.0
+offset_right = 457.0
+offset_bottom = 488.0
+texture_normal = ExtResource("10_jrkl2")
+texture_pressed = ExtResource("9_4qey5")
+
+[node name="Credits" type="TextureButton" parent="MainMenu/Buttons"]
+layout_mode = 0
+offset_left = 169.0
+offset_top = 275.0
+offset_right = 300.0
+offset_bottom = 377.0
+texture_normal = ExtResource("5_tk5yt")
+texture_pressed = ExtResource("6_0hdht")
+
+[node name="Options" parent="MainMenu/Buttons" instance=ExtResource("7_v0ec1")]
+layout_mode = 0
+offset_left = 325.0
+offset_top = 275.0
+offset_right = 456.0
+offset_bottom = 377.0
+
+[connection signal="pressed" from="MainMenu/Buttons/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="MainMenu/Buttons/QuitGame" to="." method="_on_quit_game_pressed"]
+[connection signal="pressed" from="MainMenu/Buttons/Credits" to="." method="_on_credits_pressed"]
