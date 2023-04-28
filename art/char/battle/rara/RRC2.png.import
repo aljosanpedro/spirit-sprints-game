@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cjngiqvlousft"
-path="res://.godot/imported/RRC2.png-fb458fc21340e49a13d770380814bda5.ctex"
+path="res://.godot/imported/RRC2.png-e6f4d185beb6eb73b3cbea8073036cfd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/chars/battle/rara/RRC2.png"
-dest_files=["res://.godot/imported/RRC2.png-fb458fc21340e49a13d770380814bda5.ctex"]
+source_file="res://art/char/battle/rara/RRC2.png"
+dest_files=["res://.godot/imported/RRC2.png-e6f4d185beb6eb73b3cbea8073036cfd.ctex"]
 
 [params]
 

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://br2e2pafjyxg1"
-path="res://.godot/imported/EvilKuring2.png-3c561f174b10885bd890bb54505348e7.ctex"
+path="res://.godot/imported/EvilKuring2.png-afc916278101a3630b697afb6261edc0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/chars/battle/kuring/EvilKuring2.png"
-dest_files=["res://.godot/imported/EvilKuring2.png-3c561f174b10885bd890bb54505348e7.ctex"]
+source_file="res://art/char/battle/kuring/EvilKuring2.png"
+dest_files=["res://.godot/imported/EvilKuring2.png-afc916278101a3630b697afb6261edc0.ctex"]
 
 [params]
 

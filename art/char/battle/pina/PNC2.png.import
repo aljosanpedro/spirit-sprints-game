@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c56rmdlrrjpin"
-path="res://.godot/imported/PNC2.png-be3607e566a3967d3c1ed5f2b1dd49d5.ctex"
+path="res://.godot/imported/PNC2.png-3cefc2b2a51acd30b4d35e6ca17d341c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/chars/battle/pina/PNC2.png"
-dest_files=["res://.godot/imported/PNC2.png-be3607e566a3967d3c1ed5f2b1dd49d5.ctex"]
+source_file="res://art/char/battle/pina/PNC2.png"
+dest_files=["res://.godot/imported/PNC2.png-3cefc2b2a51acd30b4d35e6ca17d341c.ctex"]
 
 [params]
 
