@@ -9,7 +9,7 @@ const START_PATH = "res://prog/scenes/ui/screens/title_screen.tscn"
 	# the values (paths) are what's needed
 
 const SCENE_NAMES_TO_PATHS := {
-	"TitleScreen" : "res://prog/scenes/ui/screens/title_screen.tscn",
+	"TitleScreen" : "res://ui/screens/title/title_screen.tscn",
 	
 	"IntroStory"  : "res://prog/scenes/story/intro_story.tscn",
 	
@@ -44,4 +44,4 @@ func next_scene():
 		scene_index = 0
 	
 	scene_path = scene_paths[scene_index]
-	var _next_scene = get_tree().change_scene_to_file(scene_path)
+	get_tree().change_scene_to_file(scene_path)
