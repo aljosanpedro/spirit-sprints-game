@@ -31,6 +31,7 @@ offset_right = -541.0
 offset_bottom = -80.0
 
 [node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 theme_override_styles/panel = SubResource("StyleBoxFlat_hsisr")
@@ -67,9 +68,9 @@ offset_bottom = 40.0
 
 [node name="OptionsText" type="Label" parent="Menu/Text"]
 layout_mode = 0
-offset_left = 286.0
+offset_left = 274.0
 offset_top = 254.0
-offset_right = 476.0
+offset_right = 485.0
 offset_bottom = 326.0
 theme_override_fonts/font = ExtResource("3_no47m")
 theme_override_font_sizes/font_size = 70

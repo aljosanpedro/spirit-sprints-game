@@ -22,6 +22,16 @@ TUMINDIG– kung ang sagot ay hindi matagpuan sa alinmang baraha
 Pumili ng isa lamang. 
 - Correct
 	Join Rara (happy) 1
+	Rara: Rara Barks\:\
+Yes!!\
+Hehe, kita mo ‘yan?\
+Ayos!\
+Tabi tabi po!
+	GoodPina (GoodPina): Pina Barks\:\
+Habul-habulin, Rara! \
+Ano ba ‘yan…\
+Hahaha!\
+Laro pa tayo, Rara!
 	Rara: Hehe, kita mo yan, Pina?
 	Join GoodPina 3
 	GoodPina: Sinuwerte ka lang.
@@ -30,6 +40,11 @@ Pumili ng isa lamang.
 	[jump timeline="" label="Choice End"]
 - Wrong
 	Join GoodPina 3
+	Rara (cry): Rara Barks\:\
+Ay, mali!\
+Ha?!\
+Ack, kalma lang Rara!\
+Taob na...!
 	GoodPina: Hahaha! “Alam ko na yan”, ah? 
 	Join Rara (mad) 1
 	Rara: Alam ko na nga. Isang beses pa!

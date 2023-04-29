@@ -1,0 +1,314 @@
+[gd_scene load_steps=10 format=3 uid="uid://cpsxjxftm1vip"]
+
+[ext_resource type="Texture2D" uid="uid://cix4n62h8bicv" path="res://ui/buttons/credits/credits_bg.png" id="1_1euwf"]
+[ext_resource type="Script" path="res://ui/buttons/credits/credits_screen.gd" id="1_ubk77"]
+[ext_resource type="FontFile" uid="uid://suuv08lbmalh" path="res://ui/fonts/menu_font.otf" id="2_utvcj"]
+[ext_resource type="FontFile" uid="uid://bwjbo40q606eb" path="res://ui/buttons/credits/roles_font.otf" id="3_lal13"]
+[ext_resource type="FontFile" uid="uid://olh7ikxydugv" path="res://battle/bugtongs/bugtong_font.otf" id="4_hv1ah"]
+[ext_resource type="Texture2D" uid="uid://btxr8pwamicvm" path="res://ui/buttons/credits/exit_button/exit_clicked.png" id="4_l84vp"]
+[ext_resource type="Texture2D" uid="uid://dqfr0m4g5f67x" path="res://ui/buttons/credits/exit_button/exit_unclicked.png" id="5_8xgim"]
+[ext_resource type="FontFile" uid="uid://cmtxrfyc7ftmo" path="res://ui/buttons/credits/names_font.otf" id="6_keijt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yg6ka"]
+bg_color = Color(0.223529, 0.223529, 0.223529, 1)
+
+[node name="CreditsScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ubk77")
+
+[node name="Panel" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Panel"]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_yg6ka")
+
+[node name="Container" type="Control" parent="."]
+anchors_preset = 0
+offset_left = -243.0
+offset_top = -138.0
+offset_right = -203.0
+offset_bottom = -98.0
+scale = Vector2(1.25, 1.25)
+
+[node name="Background" type="Control" parent="Container"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Art" type="TextureRect" parent="Container/Background"]
+layout_mode = 0
+offset_left = 583.0
+offset_top = 120.0
+offset_right = 1338.0
+offset_bottom = 960.0
+texture = ExtResource("1_1euwf")
+
+[node name="Text" type="Control" parent="Container"]
+anchors_preset = 0
+offset_top = -4.8
+offset_right = 40.0
+offset_bottom = 35.2
+
+[node name="Credits" type="Label" parent="Container/Text"]
+layout_mode = 0
+offset_left = 855.2
+offset_top = 291.0
+offset_right = 1066.2
+offset_bottom = 363.0
+theme_override_fonts/font = ExtResource("2_utvcj")
+theme_override_font_sizes/font_size = 70
+text = "CREDITS"
+horizontal_alignment = 1
+
+[node name="People" type="Control" parent="Container/Text"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Aljo" type="Control" parent="Container/Text/People"]
+anchors_preset = 0
+offset_left = 855.0
+offset_top = 364.0
+offset_right = 895.0
+offset_bottom = 404.0
+
+[node name="Name" type="Label" parent="Container/Text/People/Aljo"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 17.0
+offset_right = 213.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("4_hv1ah")
+theme_override_font_sizes/font_size = 28
+text = "ALJO SAN PEDRO
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Roles" type="Label" parent="Container/Text/People/Aljo"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 48.6
+offset_right = 315.0
+offset_bottom = 72.6
+theme_override_fonts/font = ExtResource("3_lal13")
+theme_override_font_sizes/font_size = 22
+text = "project manager, programmer, game designer"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Renee" type="Control" parent="Container/Text/People"]
+anchors_preset = 0
+offset_left = 855.0
+offset_top = 420.0
+offset_right = 895.0
+offset_bottom = 460.0
+
+[node name="Name" type="Label" parent="Container/Text/People/Renee"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 17.0
+offset_right = 213.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("6_keijt")
+theme_override_font_sizes/font_size = 27
+text = "RENEE GARIN"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Roles" type="Label" parent="Container/Text/People/Renee"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 48.6
+offset_right = 315.0
+offset_bottom = 72.6
+theme_override_fonts/font = ExtResource("3_lal13")
+theme_override_font_sizes/font_size = 22
+text = "WRITER (NARRATIVE), GAME DESIGNER"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Scar" type="Control" parent="Container/Text/People"]
+anchors_preset = 0
+offset_left = 855.0
+offset_top = 475.0
+offset_right = 895.0
+offset_bottom = 515.0
+
+[node name="Name" type="Label" parent="Container/Text/People/Scar"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 18.6
+offset_right = 213.0
+offset_bottom = 49.6
+theme_override_fonts/font = ExtResource("6_keijt")
+theme_override_font_sizes/font_size = 27
+text = "SCARLETT SANTOS"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Roles" type="Label" parent="Container/Text/People/Scar"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 48.6
+offset_right = 315.0
+offset_bottom = 72.6
+theme_override_fonts/font = ExtResource("3_lal13")
+theme_override_font_sizes/font_size = 22
+text = "WRITER (DIALOG, NARRATIVE)"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Yellie" type="Control" parent="Container/Text/People"]
+anchors_preset = 0
+offset_left = 855.0
+offset_top = 531.0
+offset_right = 895.0
+offset_bottom = 571.0
+
+[node name="Name" type="Label" parent="Container/Text/People/Yellie"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 17.0
+offset_right = 213.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("6_keijt")
+theme_override_font_sizes/font_size = 27
+text = "YELLIE SAN PEDRO"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Roles" type="Label" parent="Container/Text/People/Yellie"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 48.6
+offset_right = 315.0
+offset_bottom = 72.6
+theme_override_fonts/font = ExtResource("3_lal13")
+theme_override_font_sizes/font_size = 22
+text = "UI/UX ARTIST, GAME DESIGNER"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Micha" type="Control" parent="Container/Text/People"]
+anchors_preset = 0
+offset_left = 855.0
+offset_top = 587.0
+offset_right = 895.0
+offset_bottom = 627.0
+
+[node name="Name" type="Label" parent="Container/Text/People/Micha"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 17.0
+offset_right = 213.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("6_keijt")
+theme_override_font_sizes/font_size = 27
+text = "MICHA OLALIA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Roles" type="Label" parent="Container/Text/People/Micha"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 48.6
+offset_right = 315.0
+offset_bottom = 72.6
+theme_override_fonts/font = ExtResource("3_lal13")
+theme_override_font_sizes/font_size = 22
+text = "CHARACTER ARTIST"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Waki" type="Control" parent="Container/Text/People"]
+anchors_preset = 0
+offset_left = 855.0
+offset_top = 643.0
+offset_right = 895.0
+offset_bottom = 683.0
+
+[node name="Name" type="Label" parent="Container/Text/People/Waki"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 17.0
+offset_right = 213.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("6_keijt")
+theme_override_font_sizes/font_size = 27
+text = "WAKI SALVADOR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Roles" type="Label" parent="Container/Text/People/Waki"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 48.6
+offset_right = 315.0
+offset_bottom = 72.6
+theme_override_fonts/font = ExtResource("3_lal13")
+theme_override_font_sizes/font_size = 22
+text = "BACKGROUND ARTIST"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Rwen" type="Control" parent="Container/Text/People"]
+anchors_preset = 0
+offset_left = 855.0
+offset_top = 699.0
+offset_right = 895.0
+offset_bottom = 739.0
+
+[node name="Name" type="Label" parent="Container/Text/People/Rwen"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 17.0
+offset_right = 213.0
+offset_bottom = 54.0
+theme_override_fonts/font = ExtResource("6_keijt")
+theme_override_font_sizes/font_size = 27
+text = "RWEN NARVARTE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Roles" type="Label" parent="Container/Text/People/Rwen"]
+layout_mode = 0
+offset_left = -96.0
+offset_top = 48.6
+offset_right = 315.0
+offset_bottom = 72.6
+theme_override_fonts/font = ExtResource("3_lal13")
+theme_override_font_sizes/font_size = 22
+text = "SOUND DESIGNER"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Button" type="Control" parent="Container"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Exit" type="TextureButton" parent="Container/Button"]
+layout_mode = 0
+offset_left = 931.8
+offset_top = 788.0
+offset_right = 992.8
+offset_bottom = 849.0
+texture_normal = ExtResource("4_l84vp")
+texture_pressed = ExtResource("5_8xgim")
+texture_hover = ExtResource("4_l84vp")
+
+[connection signal="pressed" from="Container/Button/Exit" to="." method="_on_exit_pressed"]

@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://cg2ux8cqe5xs6"]
+
+[ext_resource type="PackedScene" uid="uid://b6ufsm3ohpra8" path="res://ui/buttons/buttons_hub/buttons_hub.tscn" id="1_78erh"]
+[ext_resource type="Script" path="res://story/scene/story_base.gd" id="1_urs45"]
+[ext_resource type="PackedScene" uid="uid://djcsxx8txhtlk" path="res://addons/dialogic/Events/DefaultStyles/Default/DialogicDefaultLayout.tscn" id="2_ed7h7"]
+
+[node name="StoryBase" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_urs45")
+
+[node name="ButtonsHub" parent="." instance=ExtResource("1_78erh")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="DefaultDialogNode" parent="." instance=ExtResource("2_ed7h7")]

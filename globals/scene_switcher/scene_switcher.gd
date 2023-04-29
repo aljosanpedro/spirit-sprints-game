@@ -1,7 +1,7 @@
 extends Node2D
 
 
-const START_PATH = "res://ui/buttons/buttons_hub/buttons_hub.tscn"
+const START_PATH = "res://ui/screens/title/title_screen.tscn"
 #const START_PATH = "res://prog/scenes/ui/pause_button.tscn"
 
 
@@ -10,6 +10,8 @@ const START_PATH = "res://ui/buttons/buttons_hub/buttons_hub.tscn"
 
 const SCENE_NAMES_TO_PATHS := {
 	"TitleScreen" : "res://ui/screens/title/title_screen.tscn",
+	
+	"StoryBase"   : "res://story/scene/story_base.tscn",
 	
 	"IntroStory"  : "res://prog/scenes/story/intro_story.tscn",
 	
