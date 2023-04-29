@@ -1,7 +1,7 @@
 extends Node2D
 
 
-const START_PATH = "res://prog/scenes/ui/screens/title_screen.tscn"	
+const START_PATH = "res://ui/buttons/buttons_hub/buttons_hub.tscn"
 #const START_PATH = "res://prog/scenes/ui/pause_button.tscn"
 
 

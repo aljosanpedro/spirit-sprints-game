@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://wb1d6wlrph7x"]
 
-[ext_resource type="Texture2D" uid="uid://byxdwip7ixqnp" path="res://art/ui/loading_screen/loading screen.png" id="1_7d1y2"]
-[ext_resource type="Texture2D" uid="uid://bymkcwidfhh1" path="res://art/ui/loading_screen/litolpoot_loading.png" id="2_7qtmh"]
+[ext_resource type="Texture2D" uid="uid://c6u1ihqkax1sm" path="res://ui/screens/loading/loading screen.png" id="1_i4bso"]
+[ext_resource type="Texture2D" uid="uid://dxph1cfr286e8" path="res://ui/screens/loading/litolpoot_loading.png" id="2_0oh26"]
 
 [node name="LoadingScreen" type="Control"]
 layout_mode = 3
@@ -11,6 +11,7 @@ anchors_preset = 0
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+texture = ExtResource("1_i4bso")
 
 [node name="Background" type="Control" parent="."]
 anchors_preset = 0
@@ -21,7 +22,6 @@ offset_bottom = 40.0
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("1_7d1y2")
 
 [node name="Icon" type="Control" parent="."]
 anchors_preset = 0
@@ -34,7 +34,7 @@ offset_left = 114.0
 offset_top = 648.0
 offset_right = 433.0
 offset_bottom = 946.0
-texture = ExtResource("2_7qtmh")
+texture = ExtResource("2_0oh26")
 
 [node name="LoadTime" type="Node" parent="."]
 

@@ -1,14 +1,17 @@
-[gd_scene load_steps=10 format=3 uid="uid://c7anb2a6fa06q"]
+[gd_scene load_steps=11 format=3 uid="uid://c7anb2a6fa06q"]
 
-[ext_resource type="Script" path="res://prog/scripts/game/ui/options/options_menu.gd" id="1_x0p18"]
-[ext_resource type="Texture2D" uid="uid://dau4l3qmgenne" path="res://art/ui/options_menu/settings menu position.png" id="2_hpq5k"]
-[ext_resource type="Texture2D" uid="uid://6o8thfknf4g4" path="res://art/ui/options_menu/buttons/exit_unclicked.png" id="3_2wxao"]
-[ext_resource type="PackedScene" path="res://prog/scenes/ui/options/volume_setting.tscn" id="3_e81uw"]
-[ext_resource type="Texture2D" uid="uid://uspxb73gjl8t" path="res://art/ui/options_menu/Options-bg.png" id="3_fgmoe"]
-[ext_resource type="Texture2D" uid="uid://dnomixxwx0gbv" path="res://art/ui/options_menu/buttons/exit_clicked.png" id="4_7y3pq"]
-[ext_resource type="FontFile" uid="uid://brtnewb411ukf" path="res://art/ui/fonts/title_buttons_menu/Brillo Solar.otf" id="4_t4fcc"]
-[ext_resource type="Texture2D" uid="uid://bc66ms585uwxq" path="res://art/ui/options_menu/buttons/save_unclicked.png" id="5_f6o4w"]
-[ext_resource type="Texture2D" uid="uid://cfjbdki1irg8g" path="res://art/ui/options_menu/buttons/save_clicked.png" id="6_wt6cw"]
+[ext_resource type="Script" path="res://ui/buttons/options/options_menu/options_menu.gd" id="1_fura2"]
+[ext_resource type="Texture2D" uid="uid://cfdsfx0dv785s" path="res://ui/buttons/options/options_menu/options_menu_bg.png" id="2_a6hxb"]
+[ext_resource type="Texture2D" uid="uid://d2325llhao5p6" path="res://ui/buttons/options/options_menu/options_menu_layout.png" id="2_oresj"]
+[ext_resource type="FontFile" uid="uid://suuv08lbmalh" path="res://ui/fonts/menu_font.otf" id="3_no47m"]
+[ext_resource type="Texture2D" uid="uid://dhwb5byh7p35b" path="res://ui/buttons/options/options_menu/buttons/cancel/exit_clicked.png" id="4_ovvpg"]
+[ext_resource type="Texture2D" uid="uid://dfdo5q0ivpg4e" path="res://ui/buttons/options/options_menu/buttons/cancel/exit_unclicked.png" id="5_tr22r"]
+[ext_resource type="Texture2D" uid="uid://2eb8nchy3385" path="res://ui/buttons/options/options_menu/buttons/save/save_clicked.png" id="6_ctnes"]
+[ext_resource type="Texture2D" uid="uid://ibf4j8fx2jjj" path="res://ui/buttons/options/options_menu/buttons/save/save_unclicked.png" id="7_qo2ls"]
+[ext_resource type="PackedScene" uid="uid://cn4adaj35aw6c" path="res://ui/buttons/options/volume_setting/volume_setting.tscn" id="9_rjc0s"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hsisr"]
+bg_color = Color(0.223529, 0.223529, 0.223529, 1)
 
 [node name="OptionsMenu" type="Control"]
 layout_mode = 3
@@ -18,79 +21,98 @@ offset_top = 120.0
 offset_right = 581.0
 offset_bottom = 120.0
 size_flags_horizontal = 4
-script = ExtResource("1_x0p18")
+script = ExtResource("1_fura2")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Panel" type="Control" parent="."]
+anchors_preset = 0
+offset_left = -581.0
+offset_top = -120.0
+offset_right = -541.0
+offset_bottom = -80.0
+
+[node name="Panel" type="Panel" parent="Panel"]
+offset_right = 1920.0
+offset_bottom = 1080.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_hsisr")
+
+[node name="Menu" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Background" type="Control" parent="Menu"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Guide" type="TextureRect" parent="Menu/Background"]
 visible = false
 layout_mode = 0
 offset_left = -12.0
 offset_top = -10.0
 offset_right = 765.0
 offset_bottom = 845.0
-texture = ExtResource("2_hpq5k")
+texture = ExtResource("2_oresj")
 
-[node name="Background" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="Art" type="TextureRect" parent="Background"]
+[node name="Art" type="TextureRect" parent="Menu/Background"]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
-texture = ExtResource("3_fgmoe")
+texture = ExtResource("2_a6hxb")
 
-[node name="Text" type="Control" parent="."]
+[node name="Text" type="Control" parent="Menu"]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="OptionsText" type="Label" parent="Text"]
+[node name="OptionsText" type="Label" parent="Menu/Text"]
 layout_mode = 0
 offset_left = 286.0
 offset_top = 254.0
 offset_right = 476.0
 offset_bottom = 326.0
-theme_override_fonts/font = ExtResource("4_t4fcc")
+theme_override_fonts/font = ExtResource("3_no47m")
 theme_override_font_sizes/font_size = 70
-text = "OPTIONS"
+text = "SETTINGS"
 
-[node name="Buttons" type="Control" parent="."]
+[node name="Buttons" type="Control" parent="Menu"]
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="ExitMenu" type="TextureButton" parent="Buttons"]
+[node name="ExitMenu" type="TextureButton" parent="Menu/Buttons"]
 layout_mode = 0
 offset_left = 94.0
 offset_top = 387.0
 offset_right = 155.0
 offset_bottom = 448.0
-texture_normal = ExtResource("4_7y3pq")
-texture_pressed = ExtResource("3_2wxao")
+texture_normal = ExtResource("4_ovvpg")
+texture_pressed = ExtResource("5_tr22r")
+texture_hover = ExtResource("4_ovvpg")
 
-[node name="SaveOptions" type="TextureButton" parent="Buttons"]
+[node name="SaveOptions" type="TextureButton" parent="Menu/Buttons"]
 layout_mode = 0
 offset_left = 602.0
 offset_top = 386.0
 offset_right = 663.0
 offset_bottom = 447.0
-texture_normal = ExtResource("6_wt6cw")
-texture_pressed = ExtResource("5_f6o4w")
+texture_normal = ExtResource("6_ctnes")
+texture_pressed = ExtResource("7_qo2ls")
+texture_hover = ExtResource("6_ctnes")
 
-[node name="MusicVolume" parent="Buttons" instance=ExtResource("3_e81uw")]
+[node name="SFXVolume" parent="Menu/Buttons" instance=ExtResource("9_rjc0s")]
 offset_left = 272.0
 offset_top = 346.0
 offset_right = 489.0
 offset_bottom = 461.0
-setting_name = "Tunog"
+setting_name = "TUNOG"
 
-[node name="SoundVolume" parent="Buttons" instance=ExtResource("3_e81uw")]
+[node name="MusicVolume" parent="Menu/Buttons" instance=ExtResource("9_rjc0s")]
 offset_left = 272.0
 offset_top = 479.0
 offset_right = 489.0
 offset_bottom = 594.0
-setting_name = "Musika"
+setting_name = "TUGTOG"
 
-[connection signal="pressed" from="Buttons/ExitMenu" to="." method="_on_exit_menu_pressed"]
-[connection signal="pressed" from="Buttons/SaveOptions" to="." method="_on_save_options_pressed"]
+[connection signal="pressed" from="Menu/Buttons/ExitMenu" to="." method="_on_exit_menu_pressed"]
+[connection signal="pressed" from="Menu/Buttons/SaveOptions" to="." method="_on_save_options_pressed"]

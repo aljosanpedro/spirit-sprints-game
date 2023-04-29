@@ -1,4 +1,5 @@
 - lower-load tasks
+
 	- base scenes
 		- story
 		- battle
@@ -82,8 +83,4 @@
 	- save system
 		- at least major sections (ex. ilog story, gm battle)
 		- via simple checkpoint system
-	- actually implement packed scenes
-		- credits
-		- loading screen
-		- options menu
-		- pause menu
+	- global for all scene path files + switch scene fxn 

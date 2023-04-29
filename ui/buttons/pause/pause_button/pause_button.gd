@@ -1,7 +1,7 @@
 extends Control
 
 
-const PAUSE_SCREEN_PATH = "res://prog/scenes/ui/screens/pause_screen.tscn"
+const PAUSE_SCREEN_PATH = "res://ui/buttons/pause/pause_screen/pause_screen.tscn"
 
 
 func _on_pressed():

@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b6nkjpxlf1eh4"]
+[gd_scene load_steps=4 format=3 uid="uid://cjohffc1oc7sm"]
 
-[ext_resource type="Texture2D" uid="uid://0dkupyvygpl1" path="res://art/ui/pause_button/pause_clicked.png" id="2_bbkre"]
-[ext_resource type="Texture2D" uid="uid://bmema1llq622a" path="res://art/ui/pause_button/pause_unclicked.png" id="3_hurpl"]
-[ext_resource type="Script" path="res://prog/scripts/game/ui/buttons/pause_button.gd" id="3_ul8a3"]
+[ext_resource type="Texture2D" uid="uid://ghk4pu3ybp05" path="res://ui/buttons/pause/pause_button/pause_clicked.png" id="2_bbkre"]
+[ext_resource type="Texture2D" uid="uid://df781j4tolqei" path="res://ui/buttons/pause/pause_button/pause_unclicked.png" id="3_hurpl"]
+[ext_resource type="Script" path="res://ui/buttons/pause/pause_button/pause_button.gd" id="3_ul8a3"]
 
 [node name="PauseButton" type="TextureButton"]
 offset_right = 40.0

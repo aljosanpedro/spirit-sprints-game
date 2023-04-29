@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cpivqni2m08g2"]
+[gd_scene load_steps=4 format=3 uid="uid://dnl0ibnn7to2u"]
 
-[ext_resource type="Texture2D" uid="uid://dkkvf6vo1r8cd" path="res://art/ui/title_screen_button/ingame_menu.png" id="1_448mo"]
-[ext_resource type="Script" path="res://prog/scripts/game/ui/buttons/title_screen_button.gd" id="1_wmmhi"]
-[ext_resource type="Texture2D" uid="uid://h5kadl1qsaqp" path="res://art/ui/title_screen_button/mainmenu_clicked.png" id="2_sslxp"]
+[ext_resource type="Texture2D" uid="uid://260dk5fp85l2" path="res://ui/buttons/back_to_title/ingame_menu.png" id="1_448mo"]
+[ext_resource type="Script" path="res://ui/buttons/back_to_title/title_screen_button.gd" id="1_wmmhi"]
+[ext_resource type="Texture2D" uid="uid://bglubt2wweyk8" path="res://ui/buttons/back_to_title/mainmenu_clicked.png" id="2_sslxp"]
 
 [node name="TitleScreen" type="TextureButton"]
 offset_right = 40.0

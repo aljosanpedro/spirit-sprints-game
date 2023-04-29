@@ -4,7 +4,7 @@ extends Control
 
 const START_GAME_PATH = "res://prog/scenes/story/intro_story.tscn"
 const CREDITS_PATH = "res://prog/scenes/ui/title_screen/credits.tscn"
-const OPTIONS_PATH = "res://prog/scenes/ui/title_screen/options.tscn"
+const OPTIONS_PATH = "res://ui/buttons/options/options_menu/options_menu.tscn"
 
 
 func _on_start_game_pressed():

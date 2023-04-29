@@ -1,7 +1,7 @@
 extends Control
 
 
-const TITLE_SCREEN_PATH = "res://prog/scenes/ui/screens/title_screen.tscn"
+const TITLE_SCREEN_PATH = "res://ui/screens/title/title_screen.tscn"
 
 
 func _on_pressed():

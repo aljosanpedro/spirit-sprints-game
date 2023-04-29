@@ -1,7 +1,7 @@
 extends TextureButton
 
 
-const OPTIONS_MENU_PATH = "res://prog/scenes/ui/options/options_menu.tscn"
+const OPTIONS_MENU_PATH = "res://ui/buttons/options/options_menu/options_menu.tscn"
 
 
 func _on_pressed():
