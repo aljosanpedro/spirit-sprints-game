@@ -1,0 +1,57 @@
+[label name="Start"]
+[label name="Background"]
+Sa loob ng maraming taon, ginamit ng mga babaylan ng mga Balete ang kanilang bugtong-bugtong upang mapatahimik ang mga bagyong kumakatawan sa galit ng mga kaluluwa ng kalikasan.
+Bawat engkuwentro, may health bar sina Rara at ang kanyang kalaban. Ang labanan ay nagtatapos kapag ang bar ng alinman nito ay unang naubos.
+Bawat round ay nahahati sa dalawang yugto\: Pagsasaulo at Palaro.
+[label name="Yugtong Pagsasaulo"]
+YUGTONG PAGSASAULO
+Ang Yugtong Pagsasaulo ay tatagal lamang ng 15 segundo, kaya mabilis dapat mag-isip.
+Join GoodPina 3
+GoodPina: Lahat ng mga babaylan ay dapat kabisado ang kanilang mga bugtong-bugtong.
+Join Rara (mad) 1
+Rara: Pinaaa, alam ko na yan.
+Leave --All--
+Sa umpisa ng round, ihahayag ang isang bugtong. Ang sagot nito ay maaaring matagpuan sa mga baraha. Alamin ang sagot at tandaan mo kung nasa iyong kamay o nasa kamay ng iyong kalaban. 
+[label name="Yugtong Palaro"]
+YUGTONG PALARO
+Ang Yugtong Palaro ay tatagal lamang ng 10 segundo! Mayroon kang tatlong pagpipilian upang kumilos\:
+LUMABAN– kung ang sagot ay nasa kamay ng iyong kalaban
+UMATAKE– kung ang sagot ay nasa iyong kamay
+TUMINDIG– kung ang sagot ay hindi matagpuan sa alinmang baraha
+[label name="Choice"]
+Pumili ng isa lamang. 
+- Correct
+	Join Rara (happy) 1
+	Rara: Hehe, kita mo yan, Pina?
+	Join GoodPina 3
+	GoodPina: Sinuwerte ka lang.
+	Rara: Ayaw mo lang aminin!
+	Leave --All--
+	[jump timeline="" label="Choice End"]
+- Wrong
+	Join GoodPina 3
+	GoodPina: Hahaha! “Alam ko na yan”, ah? 
+	Join Rara (mad) 1
+	Rara: Alam ko na nga. Isang beses pa!
+	Leave --All--
+[label name="Choice End"]
+Matatapos ang round kapag ang kalusugan ng alinman sa isa ay naubos. 
+[label name="Battle Results"]
+*Battle Results*
+- Win
+	Join Rara (happy) 1
+	Rara: Huy, nanalo ako!\
+Hehe, pinapanood mo ba ako, Lola?
+	[jump timeline="" label="Outro"]
+- Lose
+	Join Rara (mad) 1
+	Rara: Madaya ka naman, Pina!
+	[jump timeline="" label="Outro"]
+[label name="Outro"]
+Join GoodPina 3
+GoodPina: Isa pang beses?
+Join Rara (mad) 1
+Rara: Pinaaaaa, pagod na ako!
+GoodPina: Hay, nasaan na ang iyong sigla na talunin ako?
+Rara (neutral): Babalik yan bukas.
+[jump timeline="Chapter0Trans" label="Tutorial Done"]

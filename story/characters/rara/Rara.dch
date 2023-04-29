@@ -7,42 +7,42 @@
 "sound_moods": {},
 "style": ""
 },
-"default_portrait": "RaraNeutral",
+"default_portrait": "cry",
 "description": "",
 "display_name": "Rara",
 "mirror": false,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"RaraCry": {
+"cry": {
 "image": "res://story/characters/rara/RaraCry.png",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
-"RaraHappy": {
+"happy": {
 "image": "res://story/characters/rara/RaraHappy.png",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
-"RaraMad": {
+"mad": {
 "image": "res://story/characters/rara/RaraMad.png",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
-"RaraNeutral": {
+"neutral": {
 "image": "res://story/characters/rara/RaraNeutral.png",
 "mirror": false,
 "offset": Vector2(0, 0),
 "scale": 1,
 "scene": ""
 },
-"RaraSad": {
+"sad": {
 "image": "res://story/characters/rara/RaraSad.png",
 "mirror": false,
 "offset": Vector2(0, 0),

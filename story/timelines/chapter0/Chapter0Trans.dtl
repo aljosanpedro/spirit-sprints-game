@@ -1,0 +1,59 @@
+[label name="Transitory Dialog"]
+Join Rara (happy) 1
+Rara: Good morning Lola Lupe, nandito na kami ni Littlefoot para sa weekend!
+Join Littlefoot 1
+Littlefoot: Meow!
+Rara: Hehe, sana po patuloy mo kaming bantay–
+Join GoodPina 3
+Rara (cry): –aN!
+Littlefoot: (MeoW!)
+GoodPina: Ako naman?
+Rara (mad): Aaaah iring ka Pina, tinakot mo ako!
+GoodPina: Hahaha!
+GoodPina: Anong klaseng Balete naman ang madaling matakot? Sana sinabi mo, “tabi-tabi po!”
+Rara: Tabi, tabi!
+GoodPina: Ako pa rin ate mo, diba?
+Rara: Tabi, po!
+…
+Rara (happy): Hahaha!
+GoodPina: Hahaha!
+Littlefoot: Meow?
+GoodPina: Tara, maglaro tayo tulad ng dati! Kailangan mong sanayin ang iyong mga bugtong.
+Rara (mad): Uy, ‘di kaya!
+Rara (happy): Sabi ni mama malakas na ang mga bugtong ko.
+GoodPina: …
+Rara (mad): Hmph, bahala ka diyan.
+Rara (happy): Ikaw Littlefoot, ano sa tingin mo? Gusto mo bang maglaro?
+[label name="Tutorial"]
+Dumaan sa tutorial?
+- Sige!
+	Littlefoot: Meow!
+	Rara (happy): Sige! Maghanda ka na Pina, hindi ka mananalo!
+	GoodPina: Ang yabang naman mula sa taong hindi mapagsama ang mga kamay ng maayos para sa bugtong-bugtong–
+	Rara (mad): Aaaah! Pina, matagal na yan!
+	[jump timeline="Chapter0Battle" label="Start"]
+- Wag na.
+	Littlefoot: Meow.
+	Rara (sad): Haha, tama si Littlefoot. Sorry Pina, masyadong pagod na kami sa biyahe. Pahinga muna kami.
+	GoodPina: Hay, batang-bata ka talaga. Bukas uli, ah?
+	Rara (happy): Oo na, ate.
+	[jump timeline="" label="Tutorial Done"]
+[label name="Tutorial Done"]
+Leave --All--
+Kaibigang dikit nang dikit, nagpapakulo ng tubig.
+Sa Puno Sila’y Tumatakbo
+[label name="Night Time"]
+Nang gabi na iyon...
+Join Unknown 1
+Unknown: Kasalanan…to!
+Join Rara (happy) 1
+Rara: H-hello?
+Unknown: ..hindi..-nakasalan..lalaking yon!
+Rara: Hello? Sinong nandyan?
+Unknown: Pinalitan niya ako ng anak niya…
+Rara: Sino?!
+Leave --All--
+...
+Join Unknown 1
+Unknown: R a r a!!!
+[end_timeline]
