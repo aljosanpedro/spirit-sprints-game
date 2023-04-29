@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6oh54prd476e"
-path="res://.godot/imported/WhiteLady2.png-36025c7f5120110e08ca1c6a960fd371.ctex"
+uid="uid://hrigqjb7o8xh"
+path="res://.godot/imported/Balete2.png-a02ac9abc63b1ac959799bf52afccdb2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://story/characters/balete/WhiteLady2.png"
-dest_files=["res://.godot/imported/WhiteLady2.png-36025c7f5120110e08ca1c6a960fd371.ctex"]
+source_file="res://story/characters/balete/Balete2.png"
+dest_files=["res://.godot/imported/Balete2.png-a02ac9abc63b1ac959799bf52afccdb2.ctex"]
 
 [params]
 
