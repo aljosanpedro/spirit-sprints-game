@@ -1,6 +1,6 @@
 2a60927148abd1d33b818b535e306557
-::res://::1682758274
-TO-DO.txt::TextFile::-1::1682755958::0::1::::<><>::
+::res://::1682819076
+TO-DO.txt::TextFile::-1::1682759290::0::1::::<><>::
 ::res://addons/::1682690459
 ::res://addons/dialogic/::1682690460
 plugin.cfg::TextFile::-1::1682688785::0::1::::<><>::
@@ -61,11 +61,11 @@ SinglelineText.gd::GDScript::-1::1682688786::0::1::::<>LineEdit<>::
 SinglelineText.tscn::PackedScene::193280157467062682::1682688786::0::1::::<><>::res://addons/dialogic/Editor/Events/Fields/SinglelineText.gd
 Vector2.gd::GDScript::-1::1682688786::0::1::::<>Control<>::
 Vector2.tscn::PackedScene::250297584763637452::1682688786::0::1::::<><>::res://addons/dialogic/Editor/Events/Fields/Vector2.gd<>uid://kdpp3mibml33
-::res://addons/dialogic/Editor/Events/styles/::1682755670
+::res://addons/dialogic/Editor/Events/styles/::1682819034
 InputFieldsStyle.tres::Theme::9138712547249545382::1682749824::0::1::::<><>::
 ResourceMenuHover.tres::StyleBoxFlat::-1::1682688786::0::1::::<><>::
 ResourceMenuNormal.tres::StyleBoxFlat::-1::1682688786::0::1::::<><>::
-ResourceMenuPanelBackground.tres::StyleBoxFlat::209165682571293718::1682755670::0::1::::<><>::
+ResourceMenuPanelBackground.tres::StyleBoxFlat::209165682571293718::1682819034::0::1::::<><>::
 SectionPanel.tres::StyleBoxFlat::-1::1682688787::0::1::::<><>::
 selected_styleboxflat.tres::StyleBoxFlat::986196691045147741::1682688787::0::1::::<><>::
 SettingsFieldBackground.tres::StyleBoxFlat::-1::1682688787::0::1::::<><>::
@@ -215,10 +215,10 @@ HideWithChild.gd::GDScript::-1::1682688790::0::1::::<>Control<>::
 index.gd::GDScript::-1::1682688790::0::1::::<>DialogicIndexer<>::
 rpg_box1.png::CompressedTexture2D::3304862339022217711::1682688791::1682690467::1::::<><>::
 textbubble.png::CompressedTexture2D::2797704969382334234::1682688791::1682690466::1::::<><>::
-::res://addons/dialogic/Events/DefaultStyles/Default/::1682690459
+::res://addons/dialogic/Events/DefaultStyles/Default/::1682819059
 autoadvance_indicator.gd::GDScript::-1::1682688791::0::1::::<>Range<>::
 DialogicDefaultLayout.gd::GDScript::-1::1682688791::0::1::::<>CanvasLayer<>::
-DialogicDefaultLayout.tscn::PackedScene::7796225638369228436::1682688791::0::1::::<><>::res://addons/dialogic/Events/DefaultStyles/Default/DialogicDefaultLayout.gd<>res://addons/dialogic/Events/Text/node_dialog_text.gd<>res://addons/dialogic/Events/Text/node_name_label.gd<>res://addons/dialogic/Events/Character/node_portrait_container.gd<>res://addons/dialogic/Events/Choice/node_choice_button.gd<>res://addons/dialogic/Events/Background/node_background_holder.gd<>res://addons/dialogic/Events/Text/node_type_sound.gd<>uid://c2viukvbub6v6<>res://addons/dialogic/Events/Style/node_style.gd<>uid://dwcre3fjf3cj8<>uid://b6c1p14bc20p1<>res://addons/dialogic/Events/DefaultStyles/Default/autoadvance_indicator.gd<>res://addons/dialogic/Events/Choice/node_button_sound.gd<>res://addons/dialogic/Events/Text/node_next_indicator.gd<>res://addons/dialogic/Events/DefaultStyles/Default/ExampleGlossaryPopup.gd<>res://addons/dialogic/Events/DefaultStyles/ExampleHistoryScene.tscn<>res://addons/dialogic/Events/TextInput/node_text_input.gd<>res://addons/dialogic/Events/DefaultStyles/HideWithChild.gd<>uid://vrrmdx83skor<>uid://cc4xli25271fd<>uid://b5c0p00x6g6u5
+DialogicDefaultLayout.tscn::PackedScene::7796225638369228436::1682819059::0::1::::<><>::res://addons/dialogic/Events/DefaultStyles/Default/DialogicDefaultLayout.gd<>res://addons/dialogic/Events/Text/node_dialog_text.gd<>res://addons/dialogic/Events/Text/node_name_label.gd<>res://addons/dialogic/Events/Character/node_portrait_container.gd<>res://addons/dialogic/Events/Choice/node_choice_button.gd<>res://addons/dialogic/Events/Background/node_background_holder.gd<>res://addons/dialogic/Events/Text/node_type_sound.gd<>uid://c2viukvbub6v6<>res://addons/dialogic/Events/Style/node_style.gd<>uid://dwcre3fjf3cj8<>uid://b6c1p14bc20p1<>res://addons/dialogic/Events/DefaultStyles/Default/autoadvance_indicator.gd<>res://addons/dialogic/Events/Choice/node_button_sound.gd<>res://addons/dialogic/Events/Text/node_next_indicator.gd<>res://addons/dialogic/Events/DefaultStyles/Default/ExampleGlossaryPopup.gd<>res://addons/dialogic/Events/DefaultStyles/ExampleHistoryScene.tscn<>res://addons/dialogic/Events/TextInput/node_text_input.gd<>res://addons/dialogic/Events/DefaultStyles/HideWithChild.gd<>uid://vrrmdx83skor<>uid://cc4xli25271fd<>uid://b5c0p00x6g6u5
 ExampleGlossaryPopup.gd::GDScript::-1::1682688791::0::1::::<>Control<>::
 ::res://addons/dialogic/Events/DefaultStyles/RPG_BoxPortrait/::1682690459
 DialogicRPGLayout.tscn::PackedScene::2337005600158637305::1682688791::0::1::::<><>::res://addons/dialogic/Events/Character/node_portrait_container.gd<>res://addons/dialogic/Events/Text/node_dialog_text.gd<>res://addons/dialogic/Events/Text/node_name_label.gd<>uid://dch8fuekijffp<>res://addons/dialogic/Events/Choice/node_choice_button.gd
@@ -452,9 +452,13 @@ quit_unclicked.png::CompressedTexture2D::3014841179080862167::1682226468::168270
 ::res://globals/global/::1682741069
 global.gd::GDScript::-1::1682665992::0::1::::<>Node2D<>::
 global.tscn::PackedScene::439885708480279770::1682741069::0::1::::<><>::res://globals/global/global.gd
-::res://globals/scene_switcher/::1682758489
-scene_switcher.gd::GDScript::-1::1682758489::0::1::::<>Node2D<>::
+::res://globals/scene_switcher/::1682759858
+scene_switcher.gd::GDScript::-1::1682759858::0::1::::<>Node2D<>::
 scene_switcher.tscn::PackedScene::4398774024631458962::1682749824::0::1::::<><>::res://globals/scene_switcher/scene_switcher.gd
+::res://pin/::1682819059
+Hymn_Level Select.png::CompressedTexture2D::993157422463790725::1675845108::1682818983::1::::<><>::
+Hymn_Main Menu_Bunnies.png::CompressedTexture2D::3240876856539944145::1682818716::1682818983::1::::<><>::
+pin.tscn::PackedScene::4081279655613661649::1682819059::0::1::::<><>::uid://ofdfmid3vyvt<>uid://bmf51egn68ug4
 ::res://settings/::1682705594
 code_font.ttf::FontFile::3272471514807975252::1627657804::1682705594::1::::<><>::
 icon.png::CompressedTexture2D::3784988785895881296::1682665550::1682705594::1::::<><>::
@@ -488,8 +492,9 @@ RaraSad.png::CompressedTexture2D::8728685778540863638::1682664683::1682704889::1
 YoungRara.dch::Resource::-1::1682745236::0::1::::<><>::
 ::res://story/characters/unknown/::1682746399
 Unknown.dch::Resource::-1::1682746399::0::1::::<><>::
-::res://story/scene/::1682755954
-story_base.tscn::PackedScene::5250969778782834319::1682755954::0::1::::<><>::uid://b6ufsm3ohpra8
+::res://story/scene/::1682819059
+story_base.gd::GDScript::-1::1682759964::0::1::::<>Control<>::
+story_base.tscn::PackedScene::5250969778782834319::1682819059::0::1::::<><>::uid://b6ufsm3ohpra8<>res://story/scene/story_base.gd<>uid://djcsxx8txhtlk
 ::res://story/textboxes/::1682704888
 dialog_font.otf::FontFile::6165677816106609380::1682151666::1682704888::1::::<><>::
 ::res://story/textboxes/layouts/::1682704889
@@ -520,10 +525,10 @@ title_screen_button.gd::GDScript::-1::1682739341::0::1::::<>Control<>::
 title_screen_button.tscn::PackedScene::8095957458078777178::1682739503::0::1::::<><>::uid://260dk5fp85l2<>res://ui/buttons/back_to_title/title_screen_button.gd<>uid://bglubt2wweyk8
 ::res://ui/buttons/buttons_hub/::1682741342
 buttons_hub.tscn::PackedScene::4603898794988205837::1682741342::0::1::::<><>::uid://cjohffc1oc7sm<>uid://c5rol3ohybil3<>uid://dnl0ibnn7to2u
-::res://ui/buttons/credits/::1682758865
+::res://ui/buttons/credits/::1682759398
 credits_bg.png::CompressedTexture2D::5383618483240596529::1682473275::1682756275::1::::<><>::
-credits_screen.tscn::PackedScene::5864246601149967523::1682758731::0::1::::<><>::uid://cix4n62h8bicv<>res://ui/buttons/credits/credits_screen.gd<>uid://suuv08lbmalh<>uid://bwjbo40q606eb<>uid://btxr8pwamicvm<>uid://dqfr0m4g5f67x
 credits_screen.gd::GDScript::-1::1682758296::0::1::::<>Control<>::
+credits_screen.tscn::PackedScene::5864246601149967523::1682759398::0::1::::<><>::uid://cix4n62h8bicv<>res://ui/buttons/credits/credits_screen.gd<>uid://suuv08lbmalh<>uid://bwjbo40q606eb<>uid://olh7ikxydugv<>uid://btxr8pwamicvm<>uid://dqfr0m4g5f67x<>uid://cmtxrfyc7ftmo
 names_font.otf::FontFile::5655757817525647578::1682151661::1682758866::1::::<><>::
 roles_font.otf::FontFile::3949241924190462845::1682151666::1682758866::1::::<><>::
 ::res://ui/buttons/credits/exit_button/::1682756237

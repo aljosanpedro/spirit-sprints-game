@@ -8,3 +8,8 @@ export_presets.cfg
 
 # Imported translations (automatically generated from CSV files)
 *.translation
+.godot/editor/editor_layout.cfg
+.godot/editor/filesystem_cache8
+.godot/editor/project_metadata.cfg
+.godot/editor/script_editor_cache.cfg
+.godot/uid_cache.bin
